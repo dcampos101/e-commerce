@@ -87,8 +87,12 @@ npm run build
 ```
 
 ---
+## 📝 Detalles de Implementación Técnica
+1.  **Inmutabilidad del Estado:** En `CartContext.jsx`, las actualizaciones del arreglo de productos evitan mutaciones directas mediante el operador de propagación (`...`), forzando de manera segura los renderizados de React.
+2.  **Sincronización:** Los componentes contenedores limpian e inicializan sus estados de carga (`loading`) para asegurar una experiencia de usuario fluida mediante animaciones de carga (`Spinners`).
+3.  **Encapsulamiento del Brief:** El componente `Brief` se mantiene desacoplado de la lógica global y procesa estrictamente las operaciones mediante la inyección estructurada de propiedades (Props).
 
-## 📝 Detalle de salida
+## 📝 Pantallas de salida
 <img width="921" height="368" alt="image" src="https://github.com/user-attachments/assets/ae09cc99-d1b2-4e7b-ae7f-895d00738735" />
 
 <img width="921" height="345" alt="image" src="https://github.com/user-attachments/assets/5f8976aa-2a3b-4a0b-a139-d3935b2d70c0" />
@@ -101,6 +105,4 @@ npm run build
 
 
 
-1.  **Inmutabilidad del Estado:** En `CartContext.jsx`, las actualizaciones del arreglo de productos evitan mutaciones directas mediante el operador de propagación (`...`), forzando de manera segura los renderizados de React.
-2.  **Sincronización:** Los componentes contenedores limpian e inicializan sus estados de carga (`loading`) para asegurar una experiencia de usuario fluida mediante animaciones de carga (`Spinners`).
-3.  **Encapsulamiento del Brief:** El componente `Brief` se mantiene desacoplado de la lógica global y procesa estrictamente las operaciones mediante la inyección estructurada de propiedades (Props).
+
